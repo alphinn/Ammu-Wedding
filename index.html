@@ -99,13 +99,14 @@
 
   /* ---------- DATES / SCRATCH REVEAL ---------- */
   .dates{ display:flex; gap:1.2rem; justify-content:center; flex-wrap:wrap; }
-  .scratch-wrap{ position:relative; width:12.5rem; height:9.5rem; border-radius:6px; overflow:hidden; box-shadow:0 6px 20px rgba(0,0,0,.2); }
+  .scratch-wrap{ position:relative; width:12.5rem; height:11rem; border-radius:6px; overflow:hidden; box-shadow:0 6px 20px rgba(0,0,0,.2); }
   .scratch-under{ position:absolute; inset:0; background:var(--paper); border:1px solid var(--gold); display:flex; flex-direction:column; align-items:center; justify-content:center; }
   .scratch-under .kind{ font-size:.85rem; letter-spacing:.08em; color:var(--ink-soft); }
   .scratch-under .day{ font-family:'Cormorant Garamond',serif; font-weight:600; font-size:2.6rem; color:var(--maroon); line-height:1; margin:.3rem 0; }
   @media (prefers-color-scheme:dark){ .scratch-under .day{color:#e3b8bd;} }
   :root[data-theme="dark"] .scratch-under .day{color:#e3b8bd;}
   .scratch-under .month{ font-size:1.05rem; }
+  .scratch-under .time{ font-size:.82rem; color:var(--ink-soft); margin-top:.2rem; letter-spacing:.04em; }
   canvas.scratchCanvas{ position:absolute; inset:0; touch-action:none; cursor:pointer; width:100%; height:100%; }
   .scratch-hint{ font-size:.8rem; color:var(--ink-soft); margin-top:1rem; }
 
@@ -188,7 +189,7 @@
 
 <section>
   <div class="ornament">❧</div>
-  <h2 class="display">Save the Date</h2>
+  <h2 class="display">Join us for our special day</h2>
   <p class="lede">Two celebrations, one beautiful story — scratch each card to reveal.</p>
   <div class="dates">
     <div class="scratch-wrap">
@@ -196,16 +197,18 @@
         <div class="kind">Engagement</div>
         <div class="day">19</div>
         <div class="month">October 2026</div>
+        <div class="time">4:30 PM</div>
       </div>
-      <canvas class="scratchCanvas" data-w="200" data-h="152" width="200" height="152"></canvas>
+      <canvas class="scratchCanvas" data-w="200" data-h="176" width="200" height="176"></canvas>
     </div>
     <div class="scratch-wrap">
       <div class="scratch-under">
         <div class="kind">Wedding</div>
         <div class="day">21</div>
         <div class="month">October 2026</div>
+        <div class="time">10:30 AM</div>
       </div>
-      <canvas class="scratchCanvas" data-w="200" data-h="152" width="200" height="152"></canvas>
+      <canvas class="scratchCanvas" data-w="200" data-h="176" width="200" height="176"></canvas>
     </div>
   </div>
   <p class="scratch-hint">✨ swipe your finger across the gold cards ✨</p>
@@ -228,7 +231,7 @@
 
 <div class="divider"></div>
 
-<section>
+<section style="padding-bottom:1.2rem;">
   <div class="ornament">❧</div>
   <h2 class="display">The Ceremony</h2>
   <div class="venue-card">
@@ -238,7 +241,7 @@
   </div>
 </section>
 
-<section>
+<section style="padding-top:1.2rem;">
   <div class="ornament">❧</div>
   <h2 class="display">The Reception</h2>
   <div class="venue-card">
@@ -264,7 +267,7 @@
 
 <footer>
   <div class="script">With love &amp; best regards</div>
-  <div class="names">Tom &nbsp;•&nbsp; Subi &nbsp;•&nbsp; Alphin</div>
+  <div class="names">Alphin</div>
 </footer>
 
 <script>
